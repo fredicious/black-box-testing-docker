@@ -1,1 +1,8 @@
-FROM alpine:3.4
+FROM node:10
+
+WORKDIR /usr/src/app
+
+COPY src/. .
+
+EXPOSE 8080
+CMD [ "node", "server.js" ]
