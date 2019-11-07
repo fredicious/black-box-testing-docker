@@ -1,6 +1,6 @@
 FROM alpine:3.4
 
-RUN apk add --no-cache curl bash
+RUN apk add --no-cache curl bash jq
 RUN curl https://raw.githubusercontent.com/campanda/bash-test/master/bash-test > /usr/local/bin/bash-test \
  && chmod +x /usr/local/bin/bash-test
 

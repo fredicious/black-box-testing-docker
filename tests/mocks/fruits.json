@@ -1,0 +1,14 @@
+[
+  {
+    "name": "banana",
+    "level_of_deliciousness": "10"
+  },
+  {
+    "name": "apple",
+    "level_of_deliciousness": "8"
+  },
+  {
+    "name": "durian",
+    "level_of_deliciousness": "2"
+  }
+]

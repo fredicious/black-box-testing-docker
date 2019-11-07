@@ -6,7 +6,17 @@ services:
       - .:/tests
     depends_on:
       - target
+
   target:
     build: ../${TARGET}/.
     ports:
       - 8080:8080
+    depends_on:
+      - upstream
+
+  upstream:
+    image: campanda/webserver-mock
+    volumes:
+      - ./mocks:/mocks
+    environment:
+      - custom_responses_config=/mocks/upstream.yml
