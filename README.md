@@ -39,3 +39,15 @@ We can use some existing Docker Images for that:
 ## 5. Final thoughts
 
 I really enjoy doing TDD with black box testing and docker when I need to setup a new service, it forces me to think about the consumer and how I want to design the API. It also makes it very easy to refactor or completely rewrite the service in an other language.
+
+Using docker as a setup enables me to solve the question of: how do I build and run this service on my laptop, on the CI server, in production, on my new colleagues laptop etc..
+
+I think this setup is also a good starting point for doing contract driven development.
+
+
+# Hands-On !
+
+- for this example I added the target service we want to test against in 2 languages: java, python and javascript.
+- run the tests with `ENV TARGET=java ./run-tests.sh` if you want to run against the java service.
+- run the tests with `ENV TARGET=javascript ./run-tests.sh` if you want to run against the javascript service.
+- run the tests with `ENV TARGET=python ./run-tests.sh` if you want to run against the python service.
