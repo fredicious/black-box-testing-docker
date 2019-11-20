@@ -41,7 +41,8 @@ services:
     volumes:
       - ./mocks:/mocks
     environment:
-      - custom_responses_config=/mocks/upstream.yml```
+      - custom_responses_config=/mocks/upstream.yml
+```
 
 We run it with `docker-compose up --abort-on-container-exit`,
 
@@ -56,7 +57,8 @@ docker-compose up -d
 sleep 10
 docker-compose run tests *.sh
 docker-compose kill
-docker-compose down --remove-orphans```
+docker-compose down --remove-orphans
+```
 
 
 ## 4. How do we deal with upstream services ?
