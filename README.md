@@ -48,6 +48,6 @@ I think this setup is also a good starting point for doing contract driven devel
 # Hands-On !
 
 - for this example I added the target service we want to test against in 2 languages: java, python and javascript.
-- run the tests with `ENV TARGET=java ./run-tests.sh` if you want to run against the java service.
-- run the tests with `ENV TARGET=javascript ./run-tests.sh` if you want to run against the javascript service.
-- run the tests with `ENV TARGET=python ./run-tests.sh` if you want to run against the python service.
+- run the tests with `TARGET=java ./run-tests.sh` if you want to run against the java service.
+- run the tests with `TARGET=javascript ./run-tests.sh` if you want to run against the javascript service.
+- run the tests with `TARGET=python ./run-tests.sh` if you want to run against the python service.
